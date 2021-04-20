@@ -1,0 +1,32 @@
+server:
+  port: 8200
+
+#eureka:
+#  client:
+#    service-url:
+#      defaultZone: http://${eureka.instance.hostname}:9000/eureka/
+#  instance:
+#    hostname: localhost
+
+spring:
+  application:
+    name: service3
+  #配置rabbitMq 服务器
+  rabbitmq:
+    host: 127.0.0.1
+    port: 5672
+    username: guest
+    password: guest
+    #虚拟host 可以不设置,使用server默认host
+#    virtual-host: JCcccHost
+
+# 阿里云产品的相关配置
+aliyun:
+  token: 42c510c8deeb4b31b5097c8dc7aede51
+  appKey: sNmkCeZXtAe9Gbcg
+
+#api:
+#  boot:
+#    quartz:
+#      # 配置使用Jdbc方式存储任务
+#      job-store-type: jdbc
