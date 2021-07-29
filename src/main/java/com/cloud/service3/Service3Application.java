@@ -4,10 +4,12 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration;
 import org.springframework.boot.web.servlet.support.SpringBootServletInitializer;
+import org.springframework.scheduling.annotation.EnableAsync;
 
 @SpringBootApplication(exclude= {DataSourceAutoConfiguration.class})
 // @EnableEurekaClient
 // @EnableFeignClients
+@EnableAsync
 public class Service3Application extends SpringBootServletInitializer {
 
     public static void main(String[] args) {
